@@ -1,4 +1,4 @@
-# [FeNeC: Enhancing Continual Learning via Feature Clustering with Neighbor- or Logit-based Classification](https://arxiv.org/abs/2503.14301) [![Paper](https://img.shields.io/badge/arXiv-2503.14301-red)](https://arxiv.org/abs/2503.14301)
+# [FeNeC: Enhancing Continual Learning via Feature Clustering with Neighbor- or Logit-based Classification](https://arxiv.org/abs/2503.14301) [![Paper](https://img.shields.io/badge/ScienceDirect-Elsevier-blue)](https://www.sciencedirect.com/science/article/pii/S0950705126002224?dgcid=coauthor) [![Paper](https://img.shields.io/badge/arXiv-2503.14301-red)](https://arxiv.org/abs/2503.14301)
 
 [![There should be a teaser...](teaser.png)](https://arxiv.org/abs/2503.14301)
 
@@ -19,16 +19,26 @@ establish state-of-the-art results on several benchmarks.
 ## Cite
 
 ```
-@misc{ksiazek2025fenec,
-        title={FeNeC: Enhancing Continual Learning via Feature Clustering with Neighbor- or Logit-Based Classification}, 
-        author={Kamil Książek and Hubert Jastrzębski and Bartosz Trojan and Krzysztof Pniaczek and Michał Karp and Jacek Tabor},
-        year={2025},
-        eprint={2503.14301},
-        archivePrefix={arXiv},
-        primaryClass={cs.LG},
-        url={https://arxiv.org/abs/2503.14301}, 
+@article{KSIAZEK2026115479,
+        title = {FeNeC: Enhancing continual learning via feature clustering with neighbor- or logit-based classification},
+        journal = {Knowledge-Based Systems},
+        volume = {338},
+        pages = {115479},
+        year = {2026},
+        issn = {0950-7051},
+        doi = {https://doi.org/10.1016/j.knosys.2026.115479},
+        url = {https://www.sciencedirect.com/science/article/pii/S0950705126002224},
+        author = {Kamil Książek and Hubert Jastrzębski and Krzysztof Pniaczek and Bartosz Trojan and Michał Karp and Jacek Tabor},
+        keywords = {Continual learning, Class-incremental learning, Nearest neighbors, Logit-based classifiers, Prototype-based classification, Feature space modeling, Exemplar-free continual learning, Catastrophic forgetting},
+        abstract = {The ability of deep learning models to learn continuously is essential for adapting to new data categories and evolving data distributions. In recent years, approaches leveraging frozen feature extractors after an initial learning phase have been extensively studied. Many of these methods estimate per-class covariance matrices and prototypes based on backbone-derived feature representations. Within this paradigm, we introduce FeNeC (Feature Neighborhood Classifier) and FeNeC-Log, its variant based on the log-likelihood function. Our approach significantly extends the concept of per-class prototypes by constructing multiple, fine-grained sub-prototypes for each class, thereby enhancing the representation of class distributions. Utilizing the Mahalanobis distance, our models classify samples either through a nearest neighbor assignment to these sub-prototypes or trainable logit values assigned to consecutive classes. Our proposition can be seen as a generalization that reduces to existing single-prototype approaches in a special case, while extending them with the ability for more flexible adaptation to data. We demonstrate that our FeNeC variants establish state-of-the-art results across several benchmarks, proving particularly effective on CIFAR-100 and the complex ImageNet-Subset, where our method outperforms the strong FeCAM baseline by over 1% in average incremental accuracy and 1.5% in last task accuracy.}
 }
 ```
+
+## URLs
+
+* [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0950705126002224?dgcid=coauthor)
+* [arXiv](https://arxiv.org/abs/2503.14301)
+
 
 ## Alternative FeNeC implementation
 
